@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="img-header">
+      <img src="images/logo.svg" alt="Logo da empresa Snap">
+    </div>
+    <ul class="dd-menu">
+      <li id="primeiro-hover">
+        <span hover-menu-first>Features <img src="images/icon-arrow-down.svg" alt="Icone de seta para baixo"></span>
+        <ul class="sub-itens-first" hover-menu-first>
+          <li><a href="#"><img src="images/icon-todo.svg" alt="Icone de agenda"> Todo List</a></li>
+          <li><a href="#"><img src="images/icon-calendar.svg" alt="Icone de calendario"> Calendar</a></li>
+          <li><a href="#"><img src="images/icon-reminders.svg" alt="Icone de sino"> Reminders</a></li>
+          <li><a href="#"><img src="images/icon-planning.svg" alt="Icone de relogio"> Planning</a></li>
+        </ul>
+      </li>
+      <li id="segundo-hover">
+        <span hover-menu-second>Company <img src="images/icon-arrow-down.svg" alt="Icone de seta para baixo"></span>
+        <ul class="sub-itens-second" hover-menu-second>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Careers</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+    </ul>
+    <div class="card-buttons">
+      <button>Login</button>
+      <button>Register</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="card-principal">
+      <h1><span>Make</span> remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <a href="#"><button type="button">Learn more</button></a>
+      <div class="images-card">
+        <img src="images/client-databiz.svg" alt="Logo empresa databiz">
+        <img src="images/client-audiophile.svg" alt="Logo empresa audiophile">
+        <img src="images/client-meet.svg" alt="Logo empresa meet">
+        <img src="images/client-maker.svg" alt="Logo empresa makerr">
+      </div>
+    </section>
+    <section class="card-image">
+      <img src="images/image-hero-desktop.png" alt="Imagem de uma rapaz segurando um notebook
+      ">
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/PedroUchoa" target="_blank">João Pedro Uchôa</a>.
+  </div>
+</body>
+  <script src="js/script.js"></script>
+</html>

@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray:hsl(0, 0%, 41%);
+    --almost-black:hsl(0, 0%, 8%);
+}
+
+body{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 100px 900px 200px;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    font-weight: 700;
+        font-size: 15px;
+        color: var(--medium-gray);
+}
+
+.img-header img {
+    padding-top: 12px;
+}
+
+.dd-menu {
+    display: grid;
+    grid-template-columns: 80px 90px 70px 100px;
+    align-items: flex-start;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    padding-left: 2rem;
+    gap: 20px;
+    
+   
+}
+
+.dd-menu li {
+    list-style: none;
+    text-align: left;
+    width: max-content;
+}
+
+.dd-menu li span {
+    padding-bottom: 20px;
+}
+
+.dd-menu li span:hover {
+    cursor: pointer;
+    color: var(--almost-black);
+}
+
+.dd-menu li:hover .sub-itens-first {
+    display: block;
+}
+
+
+.dd-menu li:hover .sub-itens-second {
+    display: block;
+}
+
+.dd-menu li a {
+    text-decoration: none;
+    font-weight: 700;
+        font-size: 15px;
+        color: var(--medium-gray);
+}
+
+.dd-menu li a:hover{
+    color: var(--almost-black);
+}
+
+.sub-itens-first {
+    position: absolute;
+    -webkit-box-shadow: -1px 5px 17px -6px #000000;
+    box-shadow: -1px 5px 17px -6px #000000;
+    top: 30px;
+    border-radius: 10px;
+    line-height: 30px;
+    left: -30px;
+    padding: 0.5rem 1.2rem;
+    line-height: 30px;
+    display: none;
+   
+}
+
+.sub-itens-first li a {
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--medium-gray);
+}
+
+.sub-itens-first li a img {
+    vertical-align: -2px;
+    padding-right: 10px;
+}
+
+
+.sub-itens-second {
+    position: absolute;
+    -webkit-box-shadow: -1px 5px 17px -6px #000000;
+    box-shadow: -1px 5px 17px -6px #000000;
+    padding: 0.6rem 1.2rem;
+    top: 30px;
+    border-radius: 10px;
+    line-height: 30px;
+    right: 670px;
+    display: none;
+}
+
+.sub-itens-first li {
+    padding-bottom: 0;
+    
+}
+.sub-itens-second li a{
+    font-weight: 500;
+        font-size: 15px;
+        color: var(--medium-gray);
+}
+
+.card-buttons button{
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--medium-gray);
+}
+
+.card-buttons button:first-child {
+    background: transparent;
+    margin-right: 20px;
+    padding: 5px 5px;
+    border: none;
+}
+
+.card-buttons button:last-child {
+    background: transparent;
+    margin-right: 30px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--medium-gray);
+}
+
+.card-buttons button:first-child:hover {
+    cursor: pointer;
+    color: var(--almost-black);
+}
+
+.card-buttons button:last-child:hover {
+    cursor: pointer;
+    border: 2px solid var(--almost-black);
+    color: var(--almost-black);
+}
+
+main{
+    display: flex;
+    margin-top: 30px;
+}
+
+.card-principal{
+    max-width: 750px;
+    padding: 5.5rem 0 0 9rem;
+}
+
+.card-principal h1{
+    font-size: 80px;
+    font-weight: 700;
+    width:600px;
+}
+
+.card-principal h1 span{
+    padding-right: 60px;
+}
+
+.card-principal p{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--medium-gray);
+    width: 400px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.card-principal button{
+    font-size: 15px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 700;
+    padding: 0.7rem 1.2rem;
+    background-color:  var(--almost-black);
+    border: 1px solid var(--almost-black);
+    color: var(--almost-white);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.card-principal button:hover{
+    cursor: pointer;
+    background: transparent;
+    color: var(--almost-black);
+}
+
+.images-card{
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    gap: 20px;
+    align-items: center;
+    margin-top: 120px;
+}
+
+
+.card-image img{
+    max-width: 420px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
